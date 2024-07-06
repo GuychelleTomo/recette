@@ -13,9 +13,9 @@ body{
 
 div.contenu{
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding:0px 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding:0px 8px 20px 8px;
+    /*min-width: 350px;*/
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1) ;
     overflow: visible;
 }
@@ -46,7 +46,7 @@ p.description{
     max-height: 400px;
     object-fit: cover;
     background-color: gray;
-    min-height: 400px;
+    /*min-height: 400px;*/
     
 }
 
@@ -96,16 +96,16 @@ div.separateur{
     width: 100%;
     color: white;
     background-color: #6C829DC0;
-    height: 80px;
+    height: 50px;
 }
 
 .tab td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 .tab th{
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
     padding: 8px;
 }
@@ -113,7 +113,7 @@ div.separateur{
 
 
 div.colonne{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
    
 
@@ -121,17 +121,14 @@ div.colonne{
 
 div.colonne1{
     display: inline-block;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
 
-div.colonne2{
-    float: right;
-    width: 50%;
-}
 
-div.colonne3{
+
+/*div.colonne3{
     float: right;
-}
+}*/
 
 .colonne5 h2{
     text-align: center;
@@ -188,4 +185,62 @@ table.preparation td.preparation_etape{
     font-size: 14px;
     padding-left: 10px;
     padding-bottom: 10px;
+}
+
+
+
+/*styles pour ordinateur*/
+@media only screen and (min-width: 768px){
+    div.contenu{
+        min-width: 350px;
+        margin: 60px 10% 80px 10%;
+        padding:0px 30px 30px 30px;
+    }
+
+
+    .tab{
+   
+        height: 80px;
+    }
+    
+    .tab td{
+        
+        font-size: 14px;
+    }
+    .tab th{
+        font-size: 16px;
+      
+    }
+
+
+    div.colonne{
+        width: 45%;
+        margin-top: 20px;
+       
+    
+    }
+    
+    div.colonne1{
+        margin-right: 10px;
+    }
+    
+    div.colonne2{
+        float: right;
+        /*width: 50%;*/
+    }
+    
+    div.colonne3{
+        float: right;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 900px){
+    div.contenu{
+        min-width: 645px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
 }
